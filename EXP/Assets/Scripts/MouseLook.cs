@@ -16,7 +16,6 @@ public class MouseLook : MonoBehaviour
     Vector2 currentMouseDeltaVelocity = Vector2.zero;
     void Start()
     {
-        //controller = GetComponent<CharacterController>();
         if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
