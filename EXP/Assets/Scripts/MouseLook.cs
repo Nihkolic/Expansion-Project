@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    [SerializeField] Transform playerBody = null;
+    [SerializeField] Transform compPlayerBody = null;
     [SerializeField] float mouseSensitivity = 3.5f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
 
@@ -36,6 +36,6 @@ public class MouseLook : MonoBehaviour
         cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
 
         transform.localEulerAngles = Vector3.right * cameraPitch;
-        playerBody.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        compPlayerBody.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
     }
 }

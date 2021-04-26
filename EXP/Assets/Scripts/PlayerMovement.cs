@@ -9,14 +9,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
 
     float velocityY = 0.0f;
-    float jumpHeight = 3f;
-    CharacterController controller = null;
+    private float _jumpHeight = 3f;
+    CharacterController compController = null;
 
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        compController = GetComponent<CharacterController>();
     }
     void Update()
     {
@@ -29,19 +29,16 @@ public class PlayerMovement : MonoBehaviour
 
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
 
-        if (controller.isGrounded)
+        if (compController.isGrounded)
             velocityY = 0.0f;
 
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
-        {
-            velocityY = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
-
+        if (Input.GetButtonDown("Jump") && compController.isGrounded)
+            velocityY = Mathf.Sqrt(_jumpHeight * -2f * gravity);
+        
         velocityY += gravity * Time.deltaTime;
 
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed + Vector3.up * velocityY;
 
-        controller.Move(velocity * Time.deltaTime);
-
+        compController.Move(velocity * Time.deltaTime);
     }
 }
