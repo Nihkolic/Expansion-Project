@@ -177,7 +177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &28237721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 56468365}
   - component: {fileID: 56468367}
   m_Layer: 5
-  m_Name: item frame (2)
+  m_Name: item frame 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6258,7 +6258,7 @@ GameObject:
   - component: {fileID: 1329510599}
   - component: {fileID: 1329510601}
   m_Layer: 5
-  m_Name: item frame (1)
+  m_Name: item frame 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11093,7 +11093,7 @@ GameObject:
   - component: {fileID: 1585730850698828619}
   - component: {fileID: 1585730850698828632}
   m_Layer: 8
-  m_Name: Cube
+  m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11173,7 +11173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackTimer: 0.2
   compAttack: {fileID: 1585730851659559755}
-  SwordCollider: {fileID: 1585730850698828630}
+  WeaponCollider: {fileID: 1585730850698828630}
 --- !u!1 &1585730851659559767
 GameObject:
   m_ObjectHideFlags: 0
@@ -11186,7 +11186,7 @@ GameObject:
   - component: {fileID: 1585730851659559765}
   - component: {fileID: 1585730851659559755}
   m_Layer: 8
-  m_Name: Arm
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11201,7 +11201,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4697097068730673814, guid: ce5966efa9c9d864f82e29742fb8cb8c, type: 3}
       propertyPath: m_Name
-      value: item frame big
+      value: item frame 1
       objectReference: {fileID: 0}
     - target: {fileID: 4697097068730673815, guid: ce5966efa9c9d864f82e29742fb8cb8c, type: 3}
       propertyPath: m_Pivot.x

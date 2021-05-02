@@ -7,12 +7,12 @@ public class attack : MonoBehaviour
     public float attackTimer = 1f; //However long you want the delay between attacks to be
     float _attackTimer;  
     public Animator compAttack; //Drag the attack animation here
-    public GameObject SwordCollider;
+    public GameObject WeaponCollider;
     //public Animator AnimFists;
 
     void Start()
     {
-        SwordCollider.SetActive(false);
+        WeaponCollider.SetActive(false);
         _attackTimer = attackTimer;
     }
 
@@ -23,8 +23,8 @@ public class attack : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                SwordCollider.SetActive(true);
-                compAttack.Play("fist-attack");
+                WeaponCollider.SetActive(true);
+                compAttack.Play("attackWeapon");
                 //AnimFists.Play("fists-attack");
                 attackTimer = _attackTimer;
             }
@@ -32,8 +32,8 @@ public class attack : MonoBehaviour
     }
     public void ResetAttack()
     {
-        SwordCollider.SetActive(false);
-        compAttack.Play("fist-idle");
+        WeaponCollider.SetActive(false);
+        compAttack.Play("idleWeapon");
         //AnimFists.Play("fists-idle");
     }
 
