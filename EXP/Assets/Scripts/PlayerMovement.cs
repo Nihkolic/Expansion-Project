@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         targetDir.Normalize();
 
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
-
+        /*
         if (compController.isGrounded)
             velocityY = 0.0f;
 
@@ -36,9 +36,9 @@ public class PlayerMovement : MonoBehaviour
             velocityY = Mathf.Sqrt(_jumpHeight * -2f * gravity);
         
         velocityY += gravity * Time.deltaTime;
-
+        */
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed + Vector3.up * velocityY;
 
-        compController.Move(velocity * Time.deltaTime);
+        //compController.Move(velocity * Time.deltaTime);
     }
 }
