@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMov : MonoBehaviour
 {
-    float playerHeight = 2f;
+    [SerializeField] Transform orientation;
 
     [Header("Movement")]
     [SerializeField] float walkSpeed;
@@ -30,7 +30,7 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     public Transform goGroundCheck;
     bool isGrounded;
-    float groundDistance = 0.4f;
+    [SerializeField] float groundDistance = 0.4f;
     
     Vector3 moveDirection;
 
@@ -48,6 +48,8 @@ public class PlayerMov : MonoBehaviour
         print(isGrounded);
         Inputs();
         ControlDrag();
+        if (isGrounded && Input.GetKeyDown(jumpKey))
+            Jump();
     }
     private void FixedUpdate()
     {
@@ -59,10 +61,7 @@ public class PlayerMov : MonoBehaviour
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
 
-        if (isGrounded && Input.GetKeyDown(jumpKey))
-            Jump();
-
-        moveDirection = transform.forward * inputVertical + transform.right * inputHorizontal;
+        moveDirection = orientation.forward * inputVertical + orientation.right * inputHorizontal;
     }
     void Movement()
     {
@@ -84,9 +83,10 @@ public class PlayerMov : MonoBehaviour
     }
     void Jump()
     {
-        
-        Debug.Log("jump");
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-        
+        if (isGrounded)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+            rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        }   
     }
 }

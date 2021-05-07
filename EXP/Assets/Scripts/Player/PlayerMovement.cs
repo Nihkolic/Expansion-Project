@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float walkSpeed = 6.0f;
-    [SerializeField] float gravity = -13.0f;
+    //[SerializeField] float gravity = -13.0f;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
 
     float velocityY = 0.0f;
-    private float _jumpHeight = 3f;
+    //private float _jumpHeight = 3f;
     CharacterController compController = null;
 
     Vector2 currentDir = Vector2.zero;
