@@ -9,12 +9,12 @@ public class PickUp : MonoBehaviour
 
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("PlayerCollider").GetComponent<Inventory>();
        
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
             for (int i = 0; i < inventory.goSlots.Length; i++)
             {
