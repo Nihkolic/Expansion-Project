@@ -25,10 +25,13 @@ public class PlayerLook : MonoBehaviour
     }
     private void Update()
     {
-        MouseInput();
+        if (!PauseControl.gameIsPaused)
+        {
+            MouseInput();
 
-        cam.transform.rotation = Quaternion.Euler(xRotation, yRotation,0);
-        orientation.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+            cam.transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+            orientation.transform.rotation = Quaternion.Euler(0, yRotation, 0);
+        }
     }
     private void MouseInput()
     {

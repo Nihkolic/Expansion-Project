@@ -43,18 +43,16 @@ public class PlayerMov : MonoBehaviour
 
     void Update()
     {
-        isGrounded = Physics.CheckSphere(goGroundCheck.position, groundDistance, groundMask);
-        
-        print(isGrounded);
         Inputs();
-        ControlDrag();
+        ControlDrag(); //move this to fixedUpdate 
         if (isGrounded && Input.GetKeyDown(jumpKey))
             Jump();
     }
     private void FixedUpdate()
     {
         Movement();
-        
+        isGrounded = Physics.CheckSphere(goGroundCheck.position, groundDistance, groundMask);
+        //try using oncollisionenter
     }
     void Inputs()
     {
@@ -69,8 +67,9 @@ public class PlayerMov : MonoBehaviour
             rb.AddForce(moveDirection.normalized * walkSpeed * movementMultiplier, ForceMode.Acceleration);
         else if (!isGrounded)
             rb.AddForce(moveDirection.normalized * walkSpeed * movementMultiplier*airMultiplier, ForceMode.Acceleration);
+            //fall faster here
     }
-    void ControlDrag()
+    void ControlDrag()//try to tweak this a lil bit
     {
         if (isGrounded)
         {

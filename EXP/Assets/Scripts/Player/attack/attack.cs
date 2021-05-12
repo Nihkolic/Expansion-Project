@@ -18,6 +18,13 @@ public class attack : MonoBehaviour
 
     void Update()
     {
+        if (!PauseControl.gameIsPaused)
+        {
+            Attack();
+        }
+    }
+    void Attack()
+    {
         attackTimer -= Time.deltaTime;
         if (attackTimer < 0)
         {
@@ -30,6 +37,7 @@ public class attack : MonoBehaviour
             }
         }
     }
+
     public void ResetAttack()
     {
         WeaponCollider.SetActive(false);

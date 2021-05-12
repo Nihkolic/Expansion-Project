@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
-    public GameObject goItemButton;
+    [SerializeField] GameObject goItemButton;
 
     private void Start()
     {
