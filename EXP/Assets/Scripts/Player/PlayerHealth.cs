@@ -12,15 +12,15 @@ public class PlayerHealth : MonoBehaviour
     {
         hp = hpMax;
     }
-    public void Damage(int damageAmount)
+    public void Damage(int amount)
     {
-        hp -= damageAmount;
+        hp -= amount;
         if (hp < 0) hp = 0;
         UpdateUI();
     }
-    public void Heal(int damageAmount)
+    public void Heal(int amount)
     {
-        hp += damageAmount;
+        hp += amount;
         if (hp > hpMax) hp = hpMax;
         UpdateUI();
     }

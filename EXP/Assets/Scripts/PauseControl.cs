@@ -24,7 +24,6 @@ public class PauseControl : MonoBehaviour
             PauseGame();
         }
     }
-
     void PauseGame()
     {
         if (gameIsPaused)
@@ -39,7 +38,7 @@ public class PauseControl : MonoBehaviour
             ResumeGame();
         }
     }
-    public void ResumeGame()
+    public void ResumeGame() 
     {
         Time.timeScale = 1;
         gameIsPaused = false;
