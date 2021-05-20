@@ -35,7 +35,7 @@ public class PlayerMov : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -44,7 +44,7 @@ public class PlayerMov : MonoBehaviour
     void Update()
     {
         Inputs();
-        ControlDrag(); //move this to fixedUpdate 
+        ControlDrag();
         if (isGrounded && Input.GetKeyDown(jumpKey))
             Jump();
     }

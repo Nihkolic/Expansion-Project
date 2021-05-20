@@ -11,8 +11,7 @@ public class AttackCollisions : MonoBehaviour
 			//Toggle "isHit" on target object
 			collision.transform.gameObject.GetComponent
 				<TargetScript>().isHit = true;
-			Debug.Log("2");
+		
 		}
-		Debug.Log("1");
 	}
 }
