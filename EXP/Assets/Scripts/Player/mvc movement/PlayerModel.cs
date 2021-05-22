@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerModel : MonoBehaviour
 {
     public Transform orientation;
@@ -35,9 +36,5 @@ public class PlayerModel : MonoBehaviour
     public Vector3 moveDirection;
 
     public Rigidbody rb;
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-       
-    }
 }
+
