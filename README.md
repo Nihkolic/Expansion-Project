@@ -1,7 +1,7 @@
-# Expansion-Project
-2021-01
-
 Grupo 2 - Aka Team
-- Alberto Ponce
-- Andrea Alcántara
-- Jeanfranco Geldres
+- Alberto Ponce 
+   - ChessePrince - EUGENESTRIX
+- Andrea Alcántara 
+   - andreajo119
+- Jeanfranco Geldres 
+   - JeanfrancoGeldres
