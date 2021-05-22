@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public PlayerModel model;
     private void Start()
     {
+        model.rb = GetComponent<Rigidbody>();
         model.rb.freezeRotation = true;
     }
     void Update()
@@ -15,13 +16,12 @@ public class PlayerController : MonoBehaviour
         ControlDrag();
         if (model.isGrounded && Input.GetKeyDown(model.jumpKey))
             Jump();
-    }/*
+    }
     private void FixedUpdate()
     {
         Movement();
         model.isGrounded = Physics.CheckSphere(model.goGroundCheck.position, model.groundDistance, model.groundMask);
-        //try using oncollisionenter
-    }*/
+    }
     void Inputs()
     {
         model.inputHorizontal = Input.GetAxisRaw("Horizontal");
@@ -29,15 +29,14 @@ public class PlayerController : MonoBehaviour
 
         model.moveDirection = model.orientation.forward * model.inputVertical + model.orientation.right * model.inputHorizontal;
     }
-    public void Movement()
+    void Movement()
     {
         if (model.isGrounded)
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier, ForceMode.Acceleration);
         else if (!model.isGrounded)
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier * model.airMultiplier, ForceMode.Acceleration);
-        //fall faster here
     }
-    void ControlDrag()//try to tweak this a lil bit
+    void ControlDrag()
     {
         if (model.isGrounded)
         {

@@ -5,11 +5,9 @@ using UnityEngine;
 public class PlayerView : MonoBehaviour
 {
     public PlayerModel model;
-    public PlayerController controller;
-    private void FixedUpdate()
+
+    private void OnCollisionEnter(Collision collision)
     {
-        controller.Movement();
         model.isGrounded = Physics.CheckSphere(model.goGroundCheck.position, model.groundDistance, model.groundMask);
-        //try using oncollisionenter
     }
 }
