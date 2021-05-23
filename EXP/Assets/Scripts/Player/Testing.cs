@@ -15,5 +15,13 @@ public class Testing : MonoBehaviour
         {
             playerHealth.Heal(1);
         }
+        if (Input.GetMouseButton(1))
+        {
+            Debug.Log("Right");
+        }
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log("Left");
+        }
     }
 }

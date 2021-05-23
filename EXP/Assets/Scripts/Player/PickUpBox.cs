@@ -15,6 +15,7 @@ public class PickUpBox : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(hold);
         if (hold)
         {
             OnPickUp();

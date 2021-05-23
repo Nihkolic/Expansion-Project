@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class ItemHold : MonoBehaviour
 {
-	private void OnTriggerEnter(Collider col)
+	private void OnCollisionEnter(Collision col)
 	{
-		if (col.transform.tag == "Box")//change to the box
+		if (col.transform.tag == "Box")
 		{
-			//Toggle "hold" on target object
-			bool _hold = col.transform.gameObject.GetComponent<PickUpBox>().hold;
-			if (Input.GetButton("Fire2"))
+			if (Input.GetMouseButton(1))
 			{
-				_hold = true;
+				col.transform.gameObject.GetComponent<PickUpBox>().hold = true;
 				Debug.Log("aa");
 			}
 			else
 			{
-				_hold = false;
+				col.transform.gameObject.GetComponent<PickUpBox>().hold = false;
 			}
-
+			Debug.Log("box");
 		}
 	}
 }
