@@ -8,14 +8,18 @@ public class PlayerHealth : MonoBehaviour
     public int hp;
     public int hpMax = 15;
     public Image hpBar;
+    //public GameObject goBloodScreen;
+    public Animator animBloodScreen;
     private void Start()
     {
         hp = hpMax;
+        //animBloodScreen = goBloodScreen.GetComponent<Animator>();
     }
     public void Damage(int amount)
     {
         hp -= amount;
         if (hp < 0) hp = 0;
+        animBloodScreen.Play("Hurt");
         UpdateUI();
     }
     public void Heal(int amount)
@@ -31,5 +35,9 @@ public class PlayerHealth : MonoBehaviour
     public float GetHealthPercent()
     {
         return (float)hp / hpMax;
+    }
+    public void ResetHurtAnim()
+    {
+        animBloodScreen.Play("Idle");
     }
 }

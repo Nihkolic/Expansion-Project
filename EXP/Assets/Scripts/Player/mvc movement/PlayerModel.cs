@@ -36,5 +36,7 @@ public class PlayerModel : MonoBehaviour
     public Vector3 moveDirection;
 
     public Rigidbody rb;
+
+    public GameObject goFallEffect;
 }
 

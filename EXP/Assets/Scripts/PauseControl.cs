@@ -46,4 +46,11 @@ public class PauseControl : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+    public void ToMainMenu()
+    {
+        Time.timeScale = 1;
+        gameIsPaused = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 }

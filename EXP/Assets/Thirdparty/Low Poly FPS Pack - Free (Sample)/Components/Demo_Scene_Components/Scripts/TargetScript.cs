@@ -21,7 +21,17 @@ public class TargetScript : MonoBehaviour {
 	public AudioClip downSound;
 
 	public AudioSource audioSource;
-	
+
+	Renderer rend;
+	public Material currentMat;
+	public Material M2;
+
+	private void Start()
+	{
+		rend = GetComponent<MeshRenderer>();
+	}
+
+
 	private void Update () {
 		
 		//Generate random time based on min and max time values
@@ -32,8 +42,11 @@ public class TargetScript : MonoBehaviour {
 		{
 			if (routineStarted == false) 
 			{
+				rend.material = M2;
+				StartCoroutine(Back());
+
 				//Animate the target "down"
-				gameObject.GetComponent<Animation> ().Play("target_down");
+				gameObject.GetComponent<Animation>().Play("target_down");
 
 				//Set the downSound as current sound, and play it
 				audioSource.GetComponent<AudioSource>().clip = downSound;
@@ -45,7 +58,12 @@ public class TargetScript : MonoBehaviour {
 			} 
 		}
 	}
-
+	IEnumerator Back()
+	{
+		while (Time.timeScale != 1.0f)
+			yield return null;//wait for hit stop to end
+		rend.material = currentMat;
+	}
 	//Time before the target pops back up
 	private IEnumerator DelayTimer () {
 		//Wait for random amount of time

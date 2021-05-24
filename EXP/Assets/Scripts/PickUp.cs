@@ -6,11 +6,11 @@ public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
     [SerializeField] GameObject goItemButton;
+    public GameObject goEffectPickUp;
 
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("PlayerCollider").GetComponent<Inventory>();
-       
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +23,7 @@ public class PickUp : MonoBehaviour
                     //item can be added to the inventory
                     inventory.isFull[i] = true;
                     Instantiate(goItemButton, inventory.goSlots[i].transform, false);
+                    Instantiate(goEffectPickUp, transform.position, Quaternion.identity);
                     Destroy(gameObject);
                     break;
                 }
