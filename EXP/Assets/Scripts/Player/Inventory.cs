@@ -1,9 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject[] goSlots;
-    public bool[] isFull;
+    public GameObject goSlot;
+    //public bool full;
+    public Text numText;
+    public int num = 0;
+
+    public KeyCode healKey = KeyCode.E;
+    public PlayerHealth health;
+
+    public void UpdateNum()
+    {
+        numText.text = num.ToString();
+        if (num <= 0)
+        {
+            num = 0;
+        }
+    }     
+    private void Update()
+    {
+        if ((Input.GetKeyDown(healKey))&&(num>=1))
+        {
+            health.Heal(1);
+            num -= 1;
+            UpdateNum();
+        }
+    }
 }

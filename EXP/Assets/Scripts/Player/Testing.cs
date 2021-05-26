@@ -10,11 +10,7 @@ public class Testing : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            playerHealth.Damage(1);
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            playerHealth.Heal(1);
+            playerHealth.Damage(2);
         }
         if (Input.GetKeyDown(KeyCode.R))
         {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
-    [SerializeField] GameObject goItemButton;
+    //[SerializeField] GameObject goItemButton;
     public GameObject goEffectPickUp;
 
     private void Start()
@@ -16,18 +16,11 @@ public class PickUp : MonoBehaviour
     {
         if (other.CompareTag("PlayerCollider"))
         {
-            for (int i = 0; i < inventory.goSlots.Length; i++)
-            {
-                if (inventory.isFull[i] == false)
-                {
-                    //item can be added to the inventory
-                    inventory.isFull[i] = true;
-                    Instantiate(goItemButton, inventory.goSlots[i].transform, false);
-                    Instantiate(goEffectPickUp, transform.position, Quaternion.identity);
-                    Destroy(gameObject);
-                    break;
-                }
-            }
+            inventory.num += 1;
+            inventory.UpdateNum();
+            Instantiate(goEffectPickUp, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            
         }
     }
 }
