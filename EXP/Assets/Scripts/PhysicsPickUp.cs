@@ -16,7 +16,7 @@ public class PhysicsPickUp : MonoBehaviour
             if (goHeld == null)
             {
                 RaycastHit hit;
-                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
+                if ((Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange)) && hit.transform.tag == "Box")
                 {
                     PickUpObject(hit.transform.gameObject);
                 }
