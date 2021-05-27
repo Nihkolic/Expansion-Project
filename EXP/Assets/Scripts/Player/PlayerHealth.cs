@@ -13,7 +13,6 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         hp = hpMax;
-        //animBloodScreen = goBloodScreen.GetComponent<Animator>();
     }
     public void Damage(int amount)
     {

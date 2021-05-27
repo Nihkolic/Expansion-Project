@@ -12,7 +12,10 @@ public class Inventory : MonoBehaviour
 
     public KeyCode healKey = KeyCode.E;
     public PlayerHealth health;
-
+    private void Start()
+    {
+        numText.text = "0";
+    }
     public void UpdateNum()
     {
         numText.text = num.ToString();
