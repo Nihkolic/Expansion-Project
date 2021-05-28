@@ -37,6 +37,13 @@ public class PlayerHealth : MonoBehaviour
         hpBar.fillAmount = GetHealthPercent();
         textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
     }
+    private void CheckHP()
+    {
+        if (hp > 0)
+        {
+            //KILL SELF 
+        }
+    }
     public float GetHealthPercent()
     {
         return (float)hp / hpMax;
