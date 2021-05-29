@@ -28,9 +28,12 @@ public class Inventory : MonoBehaviour
     {
         if ((Input.GetKeyDown(healKey))&&(num>=1))
         {
-            health.Heal(1);
-            num -= 1;
-            UpdateNum();
+            if (health.hp < health.hpMax) 
+            {
+                health.Heal(1);
+                num -= 1;
+                UpdateNum();
+            }
         }
     }
 }
