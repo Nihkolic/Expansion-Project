@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: aac25aa7cc343874d98c67f732d98c52
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/DONT TOUCH THIS SCENE PLS/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Derrota.unity
