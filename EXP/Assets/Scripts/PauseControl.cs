@@ -53,4 +53,8 @@ public class PauseControl : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
