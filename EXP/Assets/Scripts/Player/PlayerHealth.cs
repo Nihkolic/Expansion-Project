@@ -6,46 +6,37 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public int hp;
-    public int hpMax = 20;
+    public int hpMax = 15;
     public Image hpBar;
- 
-    public Animator screenEffect;
-    public Text textHP;
-    
+    //public GameObject goBloodScreen;
+    public Animator animBloodScreen;
     private void Start()
     {
-        hpMax *= 10;
         hp = hpMax;
-        textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
     }
     public void Damage(int amount)
     {
-        hp -= amount*10;
+        hp -= amount;
         if (hp < 0) hp = 0;
-        screenEffect.Play("HurtScreen");
+        animBloodScreen.Play("Hurt");
         UpdateUI();
     }
     public void Heal(int amount)
     {
-        hp += amount*10;
+        hp += amount;
         if (hp > hpMax) hp = hpMax;
-        screenEffect.Play("HealScreen");
         UpdateUI();
     }
     private void UpdateUI()
     {
         hpBar.fillAmount = GetHealthPercent();
-        textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
-    }
-    private void CheckHP()
-    {
-        if (hp > 0)
-        {
-            //KILL SELF 
-        }
     }
     public float GetHealthPercent()
     {
         return (float)hp / hpMax;
+    }
+    public void ResetHurtAnim()
+    {
+        animBloodScreen.Play("Idle");
     }
 }
