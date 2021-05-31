@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class ScreenEffects : MonoBehaviour
 {
-    public Animator animBloodScreen;
-    public PostProcessingEffects postProcessing;
+    public Animator animScreen;
+    //public PostProcessingEffects postProcessing;
     public string idleAnim;
-    public void ResetHurtAnim()
+    public void BackToIdle()
     {
-        animBloodScreen.Play(idleAnim);
+        animScreen.Play(idleAnim);
     }
     public void ResetVolume()
     {
-        postProcessing.ResetVignette();
+        //postProcessing.ResetVignette();
     }
 }
