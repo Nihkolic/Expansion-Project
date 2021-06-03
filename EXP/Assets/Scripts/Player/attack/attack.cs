@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class attack : MonoBehaviour
 {
-    public float attackTimer = 1f; //However long you want the delay between attacks to be
+    public float attackTimer = 1f; 
     float _attackTimer;  
-    public Animator compAttack; //Drag the attack animation here
+    public Animator compAttack; 
     //public GameObject WeaponCollider;
 
-    public string animAttack;
+    public string animAttack1;
+    public string animAttack2;
     public string animIdle;
     //public Animator AnimFists;
 
+    bool anim = false;
     void Start()
     {
         //WeaponCollider.SetActive(false);
@@ -23,21 +25,33 @@ public class attack : MonoBehaviour
     {
         if (!PauseControl.gameIsPaused)
         {
-            Attack();
+            RandomAttack();
         }
     }
-    private void Attack()
+    private void Attack(string attack)
     {
         attackTimer -= Time.deltaTime;
         if (attackTimer < 0)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetMouseButtonDown(0))
             {
                 //WeaponCollider.SetActive(true);
-                compAttack.Play(animAttack);
+                compAttack.Play(attack);
                 //AnimFists.Play("fists-attack");
                 attackTimer = _attackTimer;
+                anim = !anim;
             }
+        }
+    }
+    void RandomAttack()
+    {
+        if (anim == false)
+        {
+            Attack(animAttack1);
+        }
+        if(anim)
+        {
+            Attack(animAttack2);
         }
     }
 
