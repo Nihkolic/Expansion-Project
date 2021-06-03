@@ -44,7 +44,7 @@ public class attack : MonoBehaviour
     public void ResetAttack()
     {
         //WeaponCollider.SetActive(false);
-        compAttack.SetTrigger("BackToIdle");
+        compAttack.Play(animIdle);
 
         //AnimFists.Play("fists-idle");
     }
