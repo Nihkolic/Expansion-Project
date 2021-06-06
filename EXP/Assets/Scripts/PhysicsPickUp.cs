@@ -47,6 +47,7 @@ public class PhysicsPickUp : MonoBehaviour
             Rigidbody rbPick = goPick.GetComponent<Rigidbody>();
             rbPick.useGravity = false;
             rbPick.drag = 10f;
+            rbPick.angularDrag = 10f;
 
             rbPick.transform.parent = holdParent;
             goHeld = goPick;
@@ -57,6 +58,7 @@ public class PhysicsPickUp : MonoBehaviour
         Rigidbody rbHeld = goHeld.GetComponent<Rigidbody>();
         rbHeld.useGravity = true;
         rbHeld.drag = 1f;
+        rbHeld.angularDrag = 1f;
 
         rbHeld.transform.parent = null;
         goHeld = null;
