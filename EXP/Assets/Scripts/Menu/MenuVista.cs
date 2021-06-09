@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class MenuVista : MonoBehaviour
 {
-    public MenuControlador controlador;
-    
-    public void BInicio()
+    public MenuModelo modelo;
+    void Start()
     {
         
     }
 
-    public void BCreditos()
+    void Update()
     {
-
-    }
-
-    public void Salir()
-    {
-
+        
     }
 }
