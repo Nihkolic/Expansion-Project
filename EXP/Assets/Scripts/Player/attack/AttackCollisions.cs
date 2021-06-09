@@ -33,7 +33,17 @@ public class AttackCollisions : MonoBehaviour
 			
 			col.transform.gameObject.GetComponent
 				<EnemyHitStop>().isHit = true;
+			col.transform.gameObject.GetComponent
+				<EnemyHealth>().DeductHealth(20f);
 
-		}
+		}/*
+		if (col.transform.tag == "Enemy")
+		{
+
+			FindObjectOfType<HitStop>().Stop(0.03f);
+			col.transform.gameObject.GetComponent
+				<EnemyHitStop>().isHit = true;
+
+		}*/
 	}
 }
