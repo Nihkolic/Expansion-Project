@@ -4,21 +4,34 @@ using UnityEngine;
 
 public class EnemyHitStop : MonoBehaviour
 {
-	public bool isHit = false;
+	
+	[Header("Body")]
+	Renderer rendBody;
+	public Material matCurrentB;
+	public Material matHurtB;
 
-	Renderer rend;
-	public Material currentMat;
-	public Material M2;
+	[Header("Arm Right")]
+	public Renderer rendArmRight;
+	public Material matCurrentRight;
+	public Material matHurtRight;
 
+	[Header("Arm Left")]
+	public Renderer rendArmLeft;
+	public Material matCurrentLeft;
+	public Material matHurtLeft;
+
+	[HideInInspector] public bool isHit = false;
 	private void Start()
 	{
-		rend = GetComponent<MeshRenderer>();
+		rendBody = GetComponent<MeshRenderer>();
 	}
 	private void Update()
 	{
 		if (isHit == true)
 		{
-			rend.material = M2;
+			rendBody.material = matHurtB;
+			rendArmRight.material = matHurtRight;
+			rendArmLeft.material = matHurtLeft;
 			StartCoroutine(Back());
 		}
 	}
@@ -26,6 +39,8 @@ public class EnemyHitStop : MonoBehaviour
 	{
 		while (Time.timeScale != 1.0f)
 			yield return null;//wait for hit stop to end
-		rend.material = currentMat;
+		rendBody.material = matCurrentB;
+		rendArmRight.material = matCurrentRight;
+		rendArmLeft.material = matCurrentLeft;
 	}
 }

@@ -25,7 +25,8 @@ public class AttackCollisions : MonoBehaviour
 		if (col.transform.tag == "Target")
 		{
 
-			FindObjectOfType<HitStop>().Stop(0.03f);
+			FindObjectOfType<HitStop>().Stop(0.05f);//0.03f
+			
 			/*
 			//Toggle "isHit" on target object
 			col.transform.gameObject.GetComponent
