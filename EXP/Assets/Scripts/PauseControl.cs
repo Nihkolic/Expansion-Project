@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseControl : MonoBehaviour
 {
@@ -50,6 +51,7 @@ public class PauseControl : MonoBehaviour
     {
         Time.timeScale = 1;
         gameIsPaused = false;
+        SceneManager.LoadScene(0);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }

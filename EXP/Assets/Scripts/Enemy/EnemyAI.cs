@@ -6,33 +6,26 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     Transform target;
-    [HideInInspector]
-    public NavMeshAgent agent;
+    [HideInInspector] public NavMeshAgent agent;
     //Animator anim;
     bool isDead = false;
     public bool puedeAtacar = true; 
-    [SerializeField]
-    float chaseDistance = 10f; //2
-    [SerializeField]
-    float turnSpeed = 10f; //5
+    [SerializeField] float chaseDistance = 10f; //2
+    [SerializeField] float turnSpeed = 10f; //5
     public int DamageAmount = 3;
-    [SerializeField]
-    float ataqueTime = 2f;
+    [SerializeField] float ataqueTime = 2f;
 
     PlayerHealth playerHealth;
     GameObject player;
     
-
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("PlayerCollider");
         target = player.transform;
         playerHealth = player.GetComponent<PlayerHealth>();
         agent = GetComponent<NavMeshAgent>();
         //anim = GetComponent<Animator>();
     }
-
-
     void Update()
     {
         float distance = Vector3.Distance(transform.position, target.position);
@@ -41,7 +34,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (distance > chaseDistance && puedeAtacar)
             {
-                AtaquePlayer();
+                //AtaquePlayer();
             }
             else if (distance > chaseDistance)
             {
@@ -57,9 +50,8 @@ public class EnemyAI : MonoBehaviour
 
     void ChasePlayer()
     {
-
         agent.updatePosition = true;
-        agent.updatePosition = true;
+        //agent.updatePosition = true;
         agent.SetDestination(target.position);
         //anim.SetBool("aquíVaLaAnimaciondecaminar",true);
         //anim.SetBool("aquíVaLaAnimacionDeAtaque",false);
@@ -93,11 +85,25 @@ public class EnemyAI : MonoBehaviour
         //playerHealth.Damage(DamageAmount); aaaaaaaaaaaaaaaaaaaaahhhhhhhhh
         yield return new WaitForSeconds(ataqueTime);
         puedeAtacar = true;
-    }
+    }/*
 
-    ////public void EnemyDeathAnim()
-    //{
-    //     isDead = true;
-    //     //anim.SetTrigger("isDead");
-    //}
+    public void EnemyDeathAnim()
+    {
+         isDead = true;
+         anim.SetTrigger("isDead");
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player")) ;
+        {
+            playerInRange = true;
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player")) ;
+        {
+            playerInRange = false;
+        }
+    }*/
 }
