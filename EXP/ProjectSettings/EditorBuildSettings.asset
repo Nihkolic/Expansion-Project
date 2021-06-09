@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DONT/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/MainPrueba.unity
+    guid: dbc04994bc8a5d945a3ca104eb267feb
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: aac25aa7cc343874d98c67f732d98c52
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 2117d332554bfbc4fadcd4a29f0214a9
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 786a03e3ee3656847b65177ffebfc1d4
+  - enabled: 1
+    path: Assets/Scenes/Victoria.unity
+    guid: 67d5a97b59683d6459507b845acb4035
   m_configObjects: {}

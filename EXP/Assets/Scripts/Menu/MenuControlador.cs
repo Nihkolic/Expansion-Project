@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class MenuControlador : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public MenuModelo modelo;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
