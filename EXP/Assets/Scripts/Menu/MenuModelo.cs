@@ -4,13 +4,5 @@ using UnityEngine;
 
 public class MenuModelo : MonoBehaviour
 {
-    public MenuVista vista;
-    public string escenarioIni;
-    public string escenarioCre;
-
-    void Start()
-    {
-        
-    }
-
+    
 }
