@@ -5,20 +5,23 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float enemyHealth = 100f;
-    EnemyAI enemyAI;
+    EnemyNewAI enemyAI;
     public bool isEnemyDead;
     public Collider[] enemyCol;
 
     private void Start()
     {
-        enemyAI = GetComponent<EnemyAI>();
+        enemyAI = GetComponent<EnemyNewAI>();
     }
     public void DeductHealth(float deductHealth)
     { 
         if(!isEnemyDead)
         enemyHealth -= deductHealth;
 
-        if(enemyHealth <= 0) { EnemyDead(); }
+        if(enemyHealth <= 0) 
+        { 
+            EnemyDead(); 
+        }
     }
     void EnemyDead()
     {
