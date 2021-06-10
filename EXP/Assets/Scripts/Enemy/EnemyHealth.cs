@@ -27,7 +27,7 @@ public class EnemyHealth : MonoBehaviour
     {
         isEnemyDead = true;
         //enemyAI.EnemyDeathAnim();
-        enemyAI.agent.speed = 0f;
+        //enemyAI.agent.speed = 0f;
         foreach (var col in enemyCol)
         {
             col.enabled = false;
