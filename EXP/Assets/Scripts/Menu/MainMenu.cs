@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject main, credits;
+    AudioSource compAudioSource;
+    //public AudioClip acceptSFX;
+    private void Awake()
+    {
+        compAudioSource = GetComponent<AudioSource>();
+    }
 
     public void ChangeScene(int index)
     {
@@ -15,6 +21,7 @@ public class MainMenu : MonoBehaviour
     {
         main.SetActive(false);
         credits.SetActive(true);
+        //compAudioSource.PlayOneShot(acceptSFX);
     }
     public void Back()
     {
