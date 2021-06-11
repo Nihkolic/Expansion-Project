@@ -17,7 +17,8 @@ public class PlayerHealth : MonoBehaviour
     {
         hpMax *= 10;
         hp = hpMax;
-        textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
+        //textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
+        textHP.text = ("  " + hp.ToString());
     }
     public void Damage(int amount)
     {
@@ -36,7 +37,8 @@ public class PlayerHealth : MonoBehaviour
     private void UpdateUI()
     {
         hpBar.fillAmount = GetHealthPercent();
-        textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
+        //textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
+        textHP.text = ("  " + hp.ToString());
     }
     private void CheckHP()
     {

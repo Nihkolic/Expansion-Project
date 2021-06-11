@@ -9,8 +9,14 @@ public class PhysicsPickUp : MonoBehaviour
     public Transform holdParent;
 
     private GameObject goHeld;
+    public GameObject goText;
+    private void Awake()
+    {
+        goText.SetActive(false);
+    }
     private void Update()
     {
+        TutorialTest();
         if (Input.GetMouseButtonDown(1))
         {
             if (goHeld == null)
@@ -62,5 +68,17 @@ public class PhysicsPickUp : MonoBehaviour
 
         rbHeld.transform.parent = null;
         goHeld = null;
+    }
+    void TutorialTest()
+    {
+        RaycastHit hit;
+        if ((Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange)) && hit.transform.tag == "Box")
+        {
+            goText.SetActive(true);
+        }
+        else
+        {
+            goText.SetActive(false);
+        }
     }
 }
