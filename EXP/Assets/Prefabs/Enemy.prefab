@@ -325,7 +325,7 @@ MonoBehaviour:
   walkPointRange: 5
   sightRange: 15
   attackMovSpeed: 5
-  timeBetweenAttacks: 0.5
+  timeBetweenAttack: 0.5
   attackRange: 3
   state: 0
 --- !u!95 &533279000

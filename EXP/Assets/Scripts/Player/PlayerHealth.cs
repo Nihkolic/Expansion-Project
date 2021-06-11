@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
     public void Damage(int amount)
     {
         hp -= amount*10;
-        if (hp < 0) hp = 0;
+        CheckHP();
         screenEffect.Play("HurtScreen");
         UpdateUI();
     }
@@ -39,9 +40,10 @@ public class PlayerHealth : MonoBehaviour
     }
     private void CheckHP()
     {
-        if (hp > 0)
+        if (hp<=0)
         {
             //KILL SELF 
+            SceneManager.LoadScene(2);
         }
     }
     public float GetHealthPercent()

@@ -23,8 +23,9 @@ public class EnemyNewAI : MonoBehaviour
 
 	[Header("Attack")]
 	public float attackMovSpeed = 2f;
-	public float timeBetweenAttacks;
-	bool alreadyAttacked;
+	public float timeBetweenAttack;
+	float _timeBetweenAttack;
+	//bool alreadyAttacked;
 	public float attackRange;
 	Animator anim;
 
@@ -42,6 +43,7 @@ public class EnemyNewAI : MonoBehaviour
 		player = GameObject.Find("New Player").transform;
 		agent = GetComponent<NavMeshAgent>();
 		anim = GetComponent<Animator>();
+		_timeBetweenAttack = timeBetweenAttack;
 	}
 
 	private void Update()
@@ -59,6 +61,7 @@ public class EnemyNewAI : MonoBehaviour
 			case State.chasing:
 				ChasePlayer();
 				break;
+
 			case State.attack:
 				AttackPlayer();
 				break;
@@ -109,25 +112,22 @@ public class EnemyNewAI : MonoBehaviour
 		//Make sure enemy doesn't move
 		agent.SetDestination(transform.position);
 		transform.LookAt(player);
-
-		if (!alreadyAttacked)
+		timeBetweenAttack -= Time.deltaTime;
+		if (timeBetweenAttack<0)
 		{
 			Attack();
 			agent.speed = attackMovSpeed;
-			alreadyAttacked = true;
+			timeBetweenAttack = _timeBetweenAttack;
 			//Invoke(nameof(ResetAttack), timeBetweenAttacks);
 		}
 	}
 	private void Attack()
 	{
-		Debug.Log("attack");
 		anim.Play("EnemyAttack");
 	}
 	public void ResetAttack()
 	{
-		alreadyAttacked = false;
 		anim.Play("EnemyIdle");
-		Debug.Log("reset attackl");
 	}
 	private void OnDrawGizmosSelected()
 	{

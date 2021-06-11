@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     private void Awake()
     {
         compAudioSource = GetComponent<AudioSource>();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void ChangeScene(int index)
