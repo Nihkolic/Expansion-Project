@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class MenuVista : MonoBehaviour
 {
-    public MenuControlador controlador;
-    public void BInicio()
+    public MainMenu controlador;
+    public void BInicio(int index)
     {
-        
+        controlador.ChangeScene(index);
     }
     public void BCreditos()
     {
-        
+        controlador.Credits();
     }
     public void BSalir()
     {
-        
+        controlador.QuitGame();
     }
 }
