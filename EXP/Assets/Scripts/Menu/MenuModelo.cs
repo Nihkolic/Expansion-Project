@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class MenuModelo : MonoBehaviour
 {
-    
+    public GameObject main, credits;
+    //AudioSource compAudioSource;
 }
