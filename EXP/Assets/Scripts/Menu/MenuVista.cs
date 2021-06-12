@@ -5,7 +5,7 @@ using UnityEngine;
 public class MenuVista : MonoBehaviour
 {
     public MainMenu controlador;
-    public void BInicio(int index)
+    public void BCambioDeEscena(int index)
     {
         controlador.ChangeScene(index);
     }
@@ -16,5 +16,10 @@ public class MenuVista : MonoBehaviour
     public void BSalir()
     {
         controlador.QuitGame();
+    }
+
+    public void Volver()
+    {
+        controlador.Back();
     }
 }
