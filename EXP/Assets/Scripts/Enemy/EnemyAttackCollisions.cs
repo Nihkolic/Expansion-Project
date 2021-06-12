@@ -15,7 +15,7 @@ public class EnemyAttackCollisions : MonoBehaviour
 		{
 			//FindObjectOfType<HitStop>().Stop(0.05f);//0.03f
 			//col.transform.gameObject.GetComponent<PlayerHealth>().Damage(1);
-			health.Damage(1);
+			health.Damage(2);
 			
 		}
 	}

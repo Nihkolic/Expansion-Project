@@ -320,13 +320,13 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 128
-  patrollingMovSpeed: 8
-  chasingMovSpeed: 13
-  walkPointRange: 5
-  sightRange: 15
+  patrollingMovSpeed: 10
+  chasingMovSpeed: 15
+  walkPointRange: 8
+  sightRange: 25
   attackMovSpeed: 5
-  timeBetweenAttack: 0.5
-  attackRange: 3
+  timeBetweenAttack: 0.05
+  attackRange: 2.5
   state: 0
 --- !u!95 &533279000
 Animator:
