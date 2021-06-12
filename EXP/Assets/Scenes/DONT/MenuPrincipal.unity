@@ -346,6 +346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d01d4d6c688d346bc4859c066969a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  main: {fileID: 0}
+  credits: {fileID: 0}
 --- !u!1 &139243508
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,9 +395,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 142256282}
+  - component: {fileID: 142256284}
+  - component: {fileID: 142256283}
   - component: {fileID: 142256281}
   m_Layer: 0
-  m_Name: MainMenu Manager
+  m_Name: MainMenu MVC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,11 +414,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 142256280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 824f25d22f4808a46972e2e7c17e9103, type: 3}
+  m_Script: {fileID: 11500000, guid: e01756d49f636ef47abd9d46abf7632a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  main: {fileID: 1490156276}
-  credits: {fileID: 139243508}
+  controlador: {fileID: 142256284}
 --- !u!4 &142256282
 Transform:
   m_ObjectHideFlags: 0
@@ -429,6 +432,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &142256283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142256280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d01d4d6c688d346bc4859c066969a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 1490156276}
+  credits: {fileID: 139243508}
+--- !u!114 &142256284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142256280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3736abd7954e9b4bb9c295afb9984ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 142256283}
 --- !u!1 &197032201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,8 +1209,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 142256281}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Credits
+        m_TargetAssemblyTypeName: MenuVista, Assembly-CSharp
+        m_MethodName: BCreditos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1321,8 +1351,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 142256281}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: MenuVista, Assembly-CSharp
+        m_MethodName: BSalir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1551,8 +1581,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 142256281}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_TargetAssemblyTypeName: MenuVista, Assembly-CSharp
+        m_MethodName: BCambioDeEscena
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1916,5 +1946,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 142256281}
+    - target: {fileID: 5943335770345156143, guid: 8709a3327e46ab2409b02f2c649f36e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Volver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943335770345156143, guid: 8709a3327e46ab2409b02f2c649f36e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuVista, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8709a3327e46ab2409b02f2c649f36e7, type: 3}
