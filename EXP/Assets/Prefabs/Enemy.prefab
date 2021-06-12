@@ -45,8 +45,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 2.190198, y: 1.7303836, z: 3.2232633}
-  m_Center: {x: 0.0014118849, y: 4.539867, z: 1.8490986}
+  m_Size: {x: 2.190198, y: 1.7303836, z: 3.4985445}
+  m_Center: {x: 0.001411885, y: 4.539867, z: 1.9867395}
 --- !u!114 &8197343553528812132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,8 +325,8 @@ MonoBehaviour:
   walkPointRange: 8
   sightRange: 25
   attackMovSpeed: 5
-  timeBetweenAttack: 0.05
-  attackRange: 2.5
+  timeBetweenAttack: 0.1
+  attackRange: 2
   state: 0
 --- !u!95 &533279000
 Animator:
