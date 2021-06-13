@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PhysicsPickUp : MonoBehaviour
 {
@@ -10,9 +11,12 @@ public class PhysicsPickUp : MonoBehaviour
 
     private GameObject goHeld;
     public GameObject goText;
+    Text tutorialText;
+    bool isBoxHeld = false;
+    bool isLooking = false;
     private void Awake()
     {
-        goText.SetActive(false);
+        tutorialText = goText.GetComponent<Text>();
     }
     private void Update()
     {
@@ -57,6 +61,8 @@ public class PhysicsPickUp : MonoBehaviour
 
             rbPick.transform.parent = holdParent;
             goHeld = goPick;
+
+            isBoxHeld = true;
         }
     }
     void DropObject()
@@ -68,15 +74,34 @@ public class PhysicsPickUp : MonoBehaviour
 
         rbHeld.transform.parent = null;
         goHeld = null;
+
+        isBoxHeld = false;
     }
     void TutorialTest()
     {
         RaycastHit hit;
         if ((Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange)) && hit.transform.tag == "Box")
         {
-            goText.SetActive(true);
+            isLooking = true;
         }
         else
+        {
+            isLooking = false;
+        }
+
+        if (isBoxHeld)
+        {
+            tutorialText.text = "Press [RMB] to drop a box";
+        }else if (!isBoxHeld)
+        {
+            tutorialText.text = "Press [RMB] to pick up a box";
+        }
+
+        if (isLooking)
+        {
+            goText.SetActive(true);
+        }
+        else if (!isLooking && !isBoxHeld)
         {
             goText.SetActive(false);
         }
