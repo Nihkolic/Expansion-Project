@@ -22,7 +22,6 @@ public class PlayerMov : MonoBehaviour
     float groundDrag = 6f;
     float airDrag = 2f;
 
-
     float inputHorizontal;
     float inputVertical;
 

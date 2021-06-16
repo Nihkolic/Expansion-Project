@@ -13,8 +13,8 @@ public class Testing : MonoBehaviour
             playerHealth.Damage(2);
         }
         if (Input.GetKeyDown(KeyCode.R))
-        {
-           
+        {//reload scene, for testing purposes
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
     }

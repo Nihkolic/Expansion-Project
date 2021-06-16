@@ -9,7 +9,7 @@ public class PlayerModel : MonoBehaviour
 
     [Header("Movement")]
     public float walkSpeed = 8f;
-    public float movementMultiplier = 10f;
+    [HideInInspector] public float movementMultiplier = 10f;
     public float airMultiplier = 0.4f;
 
 
@@ -20,22 +20,22 @@ public class PlayerModel : MonoBehaviour
     public KeyCode jumpKey = KeyCode.Space;
 
     [Header("Drag")]
-    public float groundDrag = 6f;
-    public float airDrag = 2f;
+    [HideInInspector] public float groundDrag = 6f;
+    [HideInInspector] public float airDrag = 2f;
 
 
-    public float inputHorizontal;
-    public float inputVertical;
+    [HideInInspector] public float inputHorizontal;
+    [HideInInspector] public float inputVertical;
 
     [Header("Ground Detection")]
     public LayerMask groundMask;
     public Transform goGroundCheck;
-    public bool isGrounded;
+    [HideInInspector] public bool isGrounded;
     public float groundDistance = 0.4f;
 
-    public Vector3 moveDirection;
+    [HideInInspector] public Vector3 moveDirection;
 
-    public Rigidbody rb;
+    [HideInInspector] public Rigidbody rb;
 
     public GameObject goFallEffect;
 }
