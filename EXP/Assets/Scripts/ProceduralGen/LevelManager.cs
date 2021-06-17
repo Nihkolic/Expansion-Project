@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public Tile[] tiles;
+    public int[] seed;
+
+    private void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Generatelevel()
     {
-        
+        //Vector3 lastPosition = Vector3.zero;
+
+        for (int i = 0; i < seed.Length; i++)
+        {
+
+        }
+    }
+    public void GenerateMap()
+    {
+        int[,] map = new int[3, 3]
+        {
+            {6, 7, 8 },
+            {4,-1, 5 },
+            {1, 2, 3 }
+        };
+        /*
+        for (int i = 0; i < length; i++)
+        {
+            for (int i = 0; i < length; i++)
+            {
+
+            }
+        }*/
     }
 }
