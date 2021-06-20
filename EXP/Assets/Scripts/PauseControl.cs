@@ -56,13 +56,17 @@ public class PauseControl : MonoBehaviour
     {
         Time.timeScale = 1;
         gameIsPaused = false;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     void TestOneshot()
     {

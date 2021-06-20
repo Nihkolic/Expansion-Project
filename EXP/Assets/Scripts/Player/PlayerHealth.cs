@@ -12,20 +12,32 @@ public class PlayerHealth : MonoBehaviour
  
     public Animator screenEffect;
     public Text textHP;
-    
+
+    public float timeBetweenAttack = 0.9f;
+    float _timeBetweenAttack;
+
+    private void Update()
+    {
+        timeBetweenAttack -= Time.deltaTime;
+    }
     private void Start()
     {
         hpMax *= 10;
         hp = hpMax;
         //textHP.text = ("  " + hp.ToString() + " / " + hpMax.ToString());
         textHP.text = ("  " + hp.ToString());
+        _timeBetweenAttack = timeBetweenAttack;
     }
     public void Damage(int amount)
     {
-        hp -= amount*10;
-        CheckHP();
-        screenEffect.Play("HurtScreen");
-        UpdateUI();
+        if (timeBetweenAttack < 0)
+        {
+            hp -= amount * 10;
+            CheckHP();
+            screenEffect.Play("HurtScreen");
+            UpdateUI();
+            timeBetweenAttack = _timeBetweenAttack;
+        }
     }
     public void Heal(int amount)
     {

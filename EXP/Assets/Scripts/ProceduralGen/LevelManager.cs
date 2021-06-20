@@ -33,7 +33,6 @@ public class LevelManager : MonoBehaviour
                 _seed = seedArray[i];
             }
         }
-
     }
     public void GenerateGrid()
     {

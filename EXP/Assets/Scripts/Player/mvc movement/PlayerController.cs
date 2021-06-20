@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
         Movement();
         model.isGrounded = Physics.CheckSphere(model.goGroundCheck.position, model.groundDistance, model.groundMask);
     }
+
     void Inputs()
     {
         model.inputHorizontal = Input.GetAxisRaw("Horizontal");
@@ -34,7 +35,13 @@ public class PlayerController : MonoBehaviour
         if (model.isGrounded)
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier, ForceMode.Acceleration);
         else if (!model.isGrounded)
+        {
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier * model.airMultiplier, ForceMode.Acceleration);
+
+            //model.rb.velocity = new Vector3(model.rb.velocity.x, 0, model.rb.velocity.z);
+            model.rb.AddForce(transform.up * -2.5f, ForceMode.Acceleration);
+        }
+            
     }
     void ControlDrag()
     {
@@ -45,6 +52,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             model.rb.drag = model.airDrag;
+            //model.rb.angularDrag = model.airDrag;
         }
     }
     void Jump()
