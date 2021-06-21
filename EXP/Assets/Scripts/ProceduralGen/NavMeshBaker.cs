@@ -8,6 +8,6 @@ public class NavMeshBaker : MonoBehaviour
     [SerializeField] NavMeshSurface navMeshSurfaces;
     void Awake()
     {
-        navMeshSurfaces.BuildNavMesh();
+        //navMeshSurfaces.BuildNavMesh();
     }
 }
