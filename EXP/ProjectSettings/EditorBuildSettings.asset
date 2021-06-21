@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DONT/MenuPrincipal.unity
     guid: aac25aa7cc343874d98c67f732d98c52
   - enabled: 1
-    path: Assets/Scenes/DONT/Main 1.unity
-    guid: 72f53c9c91442114f87a367d3256ebc5
+    path: Assets/Scenes/DONT/Main 2.unity
+    guid: ac48ddbb467ec3345a218a6ae9fbc7d6
   - enabled: 1
     path: Assets/Scenes/DONT/Derrota.unity
     guid: 786a03e3ee3656847b65177ffebfc1d4
