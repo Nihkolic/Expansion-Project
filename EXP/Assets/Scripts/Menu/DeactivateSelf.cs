@@ -5,7 +5,7 @@ using UnityEngine;
 public class DeactivateSelf : MonoBehaviour
 {
     
-    void Awake()
+    void Start()
     {
         gameObject.SetActive(false);
     }
