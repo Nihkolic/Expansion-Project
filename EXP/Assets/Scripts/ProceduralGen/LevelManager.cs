@@ -4,36 +4,40 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public int[] seedArray;
-    public bool randomSeed;
-    public int seed;
-    int _seed;
-
-    public int gridX;
-    public int gridz;
+    public int[] seed;
+    //public int gridX;
+    //public int gridz;
     float gridSpacingOffsetX = 94.47976f;
     float gridSpacingOffsetZ = 97.80977f;
-    Vector3 gridOrigin = Vector3.zero;
-
+    public Vector3 gridOrigin = Vector3.zero;
     public GameObject[] tiles;
     private void Awake()
     {
-        GenerateGrid();
+        GenerateMap();
     }
-    void GenerateSeed()
+    public void GenerateMap()
     {
-        if (randomSeed)
+        int[,] map = new int[3, 3]
         {
-            _seed = Random.Range(0, 9999);
-        }
-        else
+            {seed[0], seed[1], seed[2]},
+            {seed[3], seed[4], seed[5]},
+            {seed[6], seed[7], seed[8]}
+        };
+        for (int row = 0; row < map.GetLength(0); row++)
         {
-            for (int i = 0; i < seedArray.Length; i++)
+            for (int col = 0; col < map.GetLength(1); col++)
             {
-                _seed = seedArray[i];
+                int index = map[row, col];
+                if(index == -1)
+                {
+                    continue;
+                }
+                GameObject clone = Instantiate(tiles[index]);
+                clone.transform.position = new Vector3(col * gridSpacingOffsetX, 0, -row * gridSpacingOffsetZ) + gridOrigin;
             }
         }
     }
+    /*
     public void GenerateGrid()
     {
         for (int x = 0; x < gridX; x++)
@@ -50,22 +54,5 @@ public class LevelManager : MonoBehaviour
         int randomIndex = Random.Range(0, tiles.Length);
         GameObject clone = Instantiate(tiles[randomIndex], positionToSpawn, Quaternion.identity);
     }
-
-    public void GenerateMap()
-    {
-        int[,] map = new int[3, 3]
-        {
-            {6, 7, 8 },
-            {4,-1, 5 },
-            {1, 2, 3 }
-        };
-        /*
-        for (int i = 0; i < length; i++)
-        {
-            for (int i = 0; i < length; i++)
-            {
-
-            }
-        }*/
-    }
+    */
 }

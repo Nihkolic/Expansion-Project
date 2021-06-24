@@ -241,8 +241,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e164eca1cdea3594db19121b53aa1ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  matCurrentB: {fileID: 2100000, guid: 6396924356c019e4c8e79f1f6c40a69f, type: 2}
-  matHurtB: {fileID: 2100000, guid: c2277d4ad129f0c43b614025a8a9313f, type: 2}
+  matCurrentB1: {fileID: 2100000, guid: 6396924356c019e4c8e79f1f6c40a69f, type: 2}
+  matHurtB1: {fileID: 2100000, guid: c2277d4ad129f0c43b614025a8a9313f, type: 2}
+  matCurrentB2: {fileID: 2100000, guid: 259a716f2afcf524aa8382b5a86fc65f, type: 2}
+  matHurtB2: {fileID: 2100000, guid: 148bf30559977da47b1e29a52b1af2c7, type: 2}
+  matCurrentB3: {fileID: 2100000, guid: 5d43bc7e20dda14469a7ad3ae75b45c5, type: 2}
+  matHurtB3: {fileID: 2100000, guid: 5b944a50ddc4e8f4c984ef16e8cfa819, type: 2}
   rendArmRight: {fileID: 5621694877326419279}
   matCurrentRight: {fileID: 2100000, guid: 3a5300d67a1dd574eb0dc43e33070627, type: 2}
   matHurtRight: {fileID: 2100000, guid: 8ca6cd7d8ddda3144bd6a776c6b7b32e, type: 2}

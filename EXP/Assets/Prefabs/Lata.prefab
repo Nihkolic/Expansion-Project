@@ -95,7 +95,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
 --- !u!135 &6571889352000687888
 SphereCollider:
   m_ObjectHideFlags: 0
