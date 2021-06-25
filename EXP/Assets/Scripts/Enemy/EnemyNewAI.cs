@@ -30,6 +30,7 @@ public class EnemyNewAI : MonoBehaviour
 	Animator anim;
 
 	bool playerInSightRange, playerInAttackRange;
+	public EnemySfx enemySfx;
 	public enum State
 	{
 		patrolling,
@@ -106,6 +107,7 @@ public class EnemyNewAI : MonoBehaviour
 	private void ChasePlayer()
 	{
 		agent.SetDestination(player.position);
+		enemySfx.PlayDetected();
 	}
 	private void AttackPlayer()
 	{
@@ -124,6 +126,7 @@ public class EnemyNewAI : MonoBehaviour
 	private void Attack()
 	{
 		anim.Play("EnemyAttack");
+		enemySfx.PlayAttack();
 	}
 	public void ResetAttack()
 	{

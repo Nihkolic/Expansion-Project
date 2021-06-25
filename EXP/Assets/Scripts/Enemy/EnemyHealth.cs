@@ -8,15 +8,18 @@ public class EnemyHealth : MonoBehaviour
     EnemyNewAI enemyAI;
     public bool isEnemyDead;
     public Collider[] enemyCol;
-
+    public EnemySfx enemySfx;
     private void Start()
     {
         enemyAI = GetComponent<EnemyNewAI>();
     }
     public void DeductHealth(float deductHealth)
-    { 
-        if(!isEnemyDead)
-        enemyHealth -= deductHealth;
+    {
+        if (!isEnemyDead)
+        {
+            enemyHealth -= deductHealth;
+            enemySfx.PlayHurt();
+        }
 
         if(enemyHealth <= 0) 
         { 
