@@ -16,7 +16,7 @@ public class EnemySfx : MonoBehaviour
     public void PlayAttack()
     {
         if(audioSource.isPlaying)
-            audioSource.PlayOneShot(attackClip, Random.Range(0.1f,0.2f));
+            audioSource.PlayOneShot(attackClip, Random.Range(0.05f,0.15f));
     }
     public void PlayDetected()
     {
