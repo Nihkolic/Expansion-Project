@@ -11,11 +11,12 @@ public class EnemySfx : MonoBehaviour
 
     public void PlayHurt()
     {
-        audioSource.PlayOneShot(hurtClip, 0.65f);
+        audioSource.PlayOneShot(hurtClip, Random.Range(0.35f, 0.6f));
     }
     public void PlayAttack()
     {
-        //audioSource.PlayOneShot(attackClip, 0.35f);
+        if(audioSource.isPlaying)
+            audioSource.PlayOneShot(attackClip, Random.Range(0.1f,0.2f));
     }
     public void PlayDetected()
     {

@@ -146,7 +146,7 @@ MonoBehaviour:
   heal2Clip: {fileID: 8300000, guid: da9228ba450ed5e43b7d212da52d69ec, type: 3}
   hurtClip: {fileID: 8300000, guid: b6acac61888a08e4c9f466e598144d89, type: 3}
   stepsClip: {fileID: 8300000, guid: 105623d7be576794bb2a346906d9a03e, type: 3}
-  jumpClip: {fileID: 8300000, guid: a159d758b146cc741999cb4dcb68936b, type: 3}
+  jumpClip: {fileID: 8300000, guid: e9e0bc9adb3984e46b0f237a1507c0f2, type: 3}
   fallClip: {fileID: 8300000, guid: e8f287656d780f8459d9827c07ed802e, type: 3}
 --- !u!1 &2672629168855950908
 GameObject:

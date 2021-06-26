@@ -34,7 +34,7 @@ public class PlayerSfx : MonoBehaviour
     }
     public void PlayJump()
     {
-        audioSource.PlayOneShot(jumpClip, 0.75f);
+        //audioSource.PlayOneShot(jumpClip, 0.75f);
     }
     public void PlayFall()
     {

@@ -176,16 +176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &100938453368994350
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -294,16 +294,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &100938454073384852
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -412,16 +412,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &100938454513855987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -530,16 +530,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &100938454817596313
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -743,16 +743,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &683634507734370428
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -870,6 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 723385309230919179}
+  - component: {fileID: 541327488315414002}
   m_Layer: 0
   m_Name: pile of cans
   m_TagString: Untagged
@@ -900,6 +901,102 @@ Transform:
   m_Father: {fileID: 2663557710867603302}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &541327488315414002
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025735053448827711}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1261121491510715890
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1090,7 @@ GameObject:
   - component: {fileID: 1261121491602858536}
   - component: {fileID: 1261121491602858539}
   - component: {fileID: 1261121491602858538}
+  - component: {fileID: 867276965290741603}
   m_Layer: 0
   m_Name: Edificio 1
   m_TagString: Untagged
@@ -1045,7 +1143,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2593228306344404060, guid: 66acca3172cfe0b4ca38b26ffc57d29e, type: 3}
+  - {fileID: 2100000, guid: c971744ffc307d34cb98d409a931a657, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1080,6 +1178,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20.000004, y: 11.999945, z: 20.000004}
   m_Center: {x: 0.0000076293945, y: 5.4999723, z: -0.0000009536743}
+--- !u!114 &867276965290741603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261121491602858533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67c3d4427501e341aae4aeda7b4042d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat1: {fileID: 2100000, guid: 78b2cf47db99340429d76593a6547b10, type: 2}
+  mat2: {fileID: 2100000, guid: a2cd975b52b44bf4a93b9dbf1bdba842, type: 2}
+  mat3: {fileID: 2100000, guid: c971744ffc307d34cb98d409a931a657, type: 2}
 --- !u!1 &1261121491603562102
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,6 +2281,7 @@ GameObject:
   - component: {fileID: 2663557710867603300}
   - component: {fileID: 2663557710867603301}
   - component: {fileID: 8114976478303995355}
+  - component: {fileID: 3725074076346572396}
   m_Layer: 0
   m_Name: Edificio2
   m_TagString: Untagged
@@ -2221,7 +2335,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5200386053698336358, guid: cd28ac25463a9c14b9a55a63a6228e4b, type: 3}
+  - {fileID: 2100000, guid: b5a8eb09f4dc33b4db2b6d9ff9564009, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2286,6 +2400,21 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &3725074076346572396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2663557710867603303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67c3d4427501e341aae4aeda7b4042d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat1: {fileID: 2100000, guid: b5a8eb09f4dc33b4db2b6d9ff9564009, type: 2}
+  mat2: {fileID: 2100000, guid: 09b002294eae11a4ea0d9cf608f5baeb, type: 2}
+  mat3: {fileID: 2100000, guid: b9d0bd2e618024e4ba2b8e977926287d, type: 2}
 --- !u!1 &2663557710926080188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,6 +2583,7 @@ Transform:
   - {fileID: 2184713049009203892}
   - {fileID: 5918930890245423415}
   - {fileID: 7933052574982241683}
+  - {fileID: 7032685850098255383}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2824,7 +2954,6 @@ GameObject:
   - component: {fileID: 1063444493535400653}
   - component: {fileID: 1659076186608242967}
   - component: {fileID: 652683140122935124}
-  - component: {fileID: 6491846754067436305}
   - component: {fileID: 4071378884900757321}
   m_Layer: 6
   m_Name: R
@@ -2930,20 +3059,6 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &6491846754067436305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3823840271636561189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0625259c8d9b7a240809f35cb1c1b3f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  navMeshSurfaces:
-  - {fileID: 652683140122935124}
 --- !u!64 &4071378884900757321
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5529,16 +5644,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &6115908991739266566
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5647,16 +5762,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &6115908991983896684
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5765,16 +5880,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &6115908992884101595
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5883,16 +5998,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp1: {fileID: 0}
-  goEffectPickUp2: {fileID: 0}
-  goEffectPickUp3: {fileID: 0}
-  goEffectPickUp4: {fileID: 0}
-  mat1: {fileID: 0}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
-  mat4: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpClip: {fileID: 0}
+  goEffectPickUp1: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp2: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp3: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp4: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  mat1: {fileID: 2100000, guid: 2475a851267102c48a157cdfd95c5516, type: 2}
+  mat2: {fileID: 2100000, guid: c34c41e50167aaf4d84ff392271978c5, type: 2}
+  mat3: {fileID: 2100000, guid: 7e81a2cb5ee6805428a37c3d5ca02227, type: 2}
+  mat4: {fileID: 2100000, guid: c899b721ffdb48f438877fb9ca91a49f, type: 2}
+  audioSource: {fileID: 541327488315414002}
+  pickUpClip: {fileID: 8300000, guid: 194cfe0d3ad6af843b642a2f6cbb1be2, type: 3}
 --- !u!135 &6115908993521923169
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6380,7 +6495,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2315023507919221515, guid: fa21f91d80b0c3c42b20e32f4b301db5, type: 3}
+  - {fileID: 2100000, guid: d40abf953463627468589aae658454ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7417,6 +7532,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1291041287457768869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933052574982241695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67c3d4427501e341aae4aeda7b4042d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat1: {fileID: 2100000, guid: 78b2cf47db99340429d76593a6547b10, type: 2}
+  mat2: {fileID: 2100000, guid: a2cd975b52b44bf4a93b9dbf1bdba842, type: 2}
+  mat3: {fileID: 2100000, guid: c971744ffc307d34cb98d409a931a657, type: 2}
 --- !u!1 &8765384756816277120
 GameObject:
   m_ObjectHideFlags: 0
@@ -7515,6 +7645,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7535003975132424591, guid: 3521f9b70d9a41243a8231557fd7a920, type: 3}
   m_PrefabInstance: {fileID: 4931456559682173254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7772084234996703489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3657238993430609678}
+    m_Modifications:
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -36.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.064734
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.43525252
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.90030843
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -128.397
+      objectReference: {fileID: 0}
+    - target: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042368258036701730, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+      propertyPath: m_Name
+      value: pile of cans
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+--- !u!4 &7032685850098255383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 739403891315156758, guid: 2c210e1b2325a6e4c83269ffa4ed9cb4, type: 3}
+  m_PrefabInstance: {fileID: 7772084234996703489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8357811335939662803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7580,6 +7772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6d6c6aa82c674648917e9d7f1cd415b, type: 3}
+--- !u!1 &7933052574982241695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2155874475663089228, guid: e6d6c6aa82c674648917e9d7f1cd415b, type: 3}
+  m_PrefabInstance: {fileID: 8357811335939662803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7933052574982241683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2155874475663089216, guid: e6d6c6aa82c674648917e9d7f1cd415b, type: 3}
