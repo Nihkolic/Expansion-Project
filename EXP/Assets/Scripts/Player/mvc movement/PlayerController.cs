@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     {
         Inputs();
         ControlDrag();
+        Land();
+        Steps();
         if (model.isGrounded && Input.GetKeyDown(model.jumpKey))
             Jump();
     }
@@ -33,7 +35,10 @@ public class PlayerController : MonoBehaviour
     void Movement()
     {
         if (model.isGrounded)
+        {
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier, ForceMode.Acceleration);
+            
+        }
         else if (!model.isGrounded)
         {
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier * model.airMultiplier, ForceMode.Acceleration);
@@ -41,7 +46,6 @@ public class PlayerController : MonoBehaviour
             //model.rb.velocity = new Vector3(model.rb.velocity.x, 0, model.rb.velocity.z);
             model.rb.AddForce(transform.up * -2.5f, ForceMode.Acceleration);
         }
-            
     }
     void ControlDrag()
     {
@@ -61,6 +65,31 @@ public class PlayerController : MonoBehaviour
         {
             model.rb.velocity = new Vector3(model.rb.velocity.x, 0, model.rb.velocity.z);
             model.rb.AddForce(transform.up * model.jumpForce, ForceMode.Impulse);
+            model.playerSfx.PlayJump();
+        }
+    }
+    void Land()
+    {
+        if (model.isGrounded)
+        {
+            if (model.hasFallen)
+            {
+                model.playerSfx.PlayFall();
+                //Debug.Log("fall");
+                model.hasFallen = false;
+            }
+        }
+        if (!model.isGrounded)
+        {
+            model.hasFallen = true;
+        }
+    }
+    void Steps()
+    {
+        if (model.isGrounded && !model.playerSfx.audioSource.isPlaying)
+        {
+            if ((model.inputHorizontal != 0) || (model.inputVertical != 0))
+                model.playerSfx.PlaySteps();
         }
     }
 }

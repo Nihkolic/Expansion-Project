@@ -176,7 +176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &100938453368994350
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -285,7 +294,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &100938454073384852
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -394,7 +412,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &100938454513855987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -503,7 +530,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &100938454817596313
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -707,7 +743,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &683634507734370428
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2897,7 +2942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0625259c8d9b7a240809f35cb1c1b3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navMeshSurfaces: {fileID: 652683140122935124}
+  navMeshSurfaces:
+  - {fileID: 652683140122935124}
 --- !u!64 &4071378884900757321
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5483,7 +5529,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &6115908991739266566
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5592,7 +5647,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &6115908991983896684
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5701,7 +5765,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &6115908992884101595
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5810,7 +5883,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396027e1ad44d034fa7380e850dad039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goEffectPickUp: {fileID: 7429097006230513510, guid: f024f62b675cab447b215b2feadbe3bd, type: 3}
+  goEffectPickUp1: {fileID: 0}
+  goEffectPickUp2: {fileID: 0}
+  goEffectPickUp3: {fileID: 0}
+  goEffectPickUp4: {fileID: 0}
+  mat1: {fileID: 0}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  mat4: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpClip: {fileID: 0}
 --- !u!135 &6115908993521923169
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -38,5 +38,7 @@ public class PlayerModel : MonoBehaviour
     [HideInInspector] public Rigidbody rb;
 
     public GameObject goFallEffect;
+    public PlayerSfx playerSfx;
+    [HideInInspector] public bool hasFallen;
 }
 

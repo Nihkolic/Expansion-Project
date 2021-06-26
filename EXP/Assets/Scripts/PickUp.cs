@@ -18,6 +18,9 @@ public class PickUp : MonoBehaviour
     public Material mat2;
     public Material mat3;
     public Material mat4;
+
+    public AudioSource audioSource;
+    public AudioClip pickUpClip;
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("PlayerCollider").GetComponent<Inventory>();
@@ -55,8 +58,13 @@ public class PickUp : MonoBehaviour
             inventory.num += 1;
             inventory.UpdateNum();
             Instantiate(goEffectPickUp, transform.position, Quaternion.identity);
+            PlayPickUp();
             Destroy(gameObject);
             
         }
+    }
+    public void PlayPickUp()
+    {
+        audioSource.PlayOneShot(pickUpClip, Random.Range(0.1f, 0.5f));
     }
 }

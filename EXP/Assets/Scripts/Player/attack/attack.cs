@@ -15,6 +15,7 @@ public class attack : MonoBehaviour
     //public Animator AnimFists;
 
     bool anim = false;
+    public AttackSfx attackSfx;
     void Start()
     {
         //WeaponCollider.SetActive(false);
@@ -28,7 +29,7 @@ public class attack : MonoBehaviour
             RandomAttack();
         }
     }
-    private void Attack(string attack)
+    private void Attack(string attack, int num)
     {
         attackTimer -= Time.deltaTime;
         if (attackTimer < 0)
@@ -37,6 +38,7 @@ public class attack : MonoBehaviour
             {
                 //WeaponCollider.SetActive(true);
                 compAttack.Play(attack);
+                attackSfx.PlayAttack(num);
                 //AnimFists.Play("fists-attack");
                 attackTimer = _attackTimer;
                 anim = !anim;
@@ -47,11 +49,13 @@ public class attack : MonoBehaviour
     {
         if (anim == false)
         {
-            Attack(animAttack1);
+            Attack(animAttack1,1);
+            
         }
         if(anim)
         {
-            Attack(animAttack2);
+            Attack(animAttack2,2);
+            
         }
     }
 

@@ -16,6 +16,8 @@ public class PlayerHealth : MonoBehaviour
     public float timeBetweenAttack = 0.9f;
     float _timeBetweenAttack;
 
+    public PlayerSfx playerSfx;
+
     private void Update()
     {
         timeBetweenAttack -= Time.deltaTime;
@@ -37,6 +39,7 @@ public class PlayerHealth : MonoBehaviour
             screenEffect.Play("HurtScreen");
             UpdateUI();
             timeBetweenAttack = _timeBetweenAttack;
+            playerSfx.PlayHurt();
         }
     }
     public void Heal(int amount)
@@ -45,6 +48,7 @@ public class PlayerHealth : MonoBehaviour
         if (hp > hpMax) hp = hpMax;
         screenEffect.Play("HealScreen");
         UpdateUI();
+        playerSfx.PlayHeal();
     }
     private void UpdateUI()
     {
