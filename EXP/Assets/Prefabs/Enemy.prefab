@@ -185,7 +185,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.65
+  m_Pitch: 0.95
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -281,9 +281,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 7926678101765577481}
-  hurtClip: {fileID: 8300000, guid: 3e3f09408dcf7ee44b813426f734910d, type: 3}
-  attackClip: {fileID: 8300000, guid: a05d443b0df962e4e8cfea0313dbc816, type: 3}
-  detectedClip: {fileID: 8300000, guid: 73b999eca4acb53419f8cab14a29defd, type: 3}
+  hurtClip: {fileID: 8300000, guid: 88cd8de3a27b3874eb8ff1c519ac3510, type: 3}
+  attackClip: {fileID: 8300000, guid: f592e760ed16f2240968bf1b035f17f6, type: 3}
+  detectedClip: {fileID: 8300000, guid: 00a457755e5dc7145bb1916688a00ec5, type: 3}
 --- !u!1 &7679146241984039566
 GameObject:
   m_ObjectHideFlags: 0

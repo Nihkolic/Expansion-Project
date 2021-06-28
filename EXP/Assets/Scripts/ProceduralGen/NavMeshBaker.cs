@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class NavMeshBaker : MonoBehaviour
 {
     [SerializeField] NavMeshSurface[] navMeshSurfaces;
+    
     void Awake()
     {
         for (int i = 0; i < navMeshSurfaces.Length; i++)

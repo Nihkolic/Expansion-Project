@@ -7,19 +7,23 @@ public class EnemySfx : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip hurtClip;
     public AudioClip attackClip;
-    public AudioClip detectedClip; //or ambient
+    public AudioClip detectedClip;
+    bool played = false;
 
     public void PlayHurt()
     {
-        audioSource.PlayOneShot(hurtClip, Random.Range(0.35f, 0.6f));
+        audioSource.PlayOneShot(hurtClip, Random.Range(0.05f, 0.4f));
     }
     public void PlayAttack()
     {
-        if(audioSource.isPlaying)
-            audioSource.PlayOneShot(attackClip, Random.Range(0.05f,0.15f));
+        audioSource.PlayOneShot(attackClip, Random.Range(0.05f,0.15f));
     }
     public void PlayDetected()
     {
-        audioSource.PlayOneShot(detectedClip, 0.05f);
+        if (!played)
+        {
+            audioSource.PlayOneShot(detectedClip, Random.Range(0.25f, 0.35f));
+            played = true;
+        }
     }
 }
