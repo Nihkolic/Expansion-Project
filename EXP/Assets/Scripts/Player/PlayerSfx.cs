@@ -38,6 +38,6 @@ public class PlayerSfx : MonoBehaviour
     }
     public void PlayFall()
     {
-        audioSource.PlayOneShot(fallClip, 0.75f);
+        audioSource.PlayOneShot(fallClip, Random.Range(0.02f, 0.1f));
     }
 }

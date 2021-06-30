@@ -41,11 +41,18 @@ public class PlayerController : MonoBehaviour
         }
         else if (!model.isGrounded)
         {
+            //model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier * model.airMultiplier, ForceMode.Acceleration);
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier * model.airMultiplier, ForceMode.Acceleration);
 
             //model.rb.velocity = new Vector3(model.rb.velocity.x, 0, model.rb.velocity.z);
-            model.rb.AddForce(transform.up * -2.5f, ForceMode.Acceleration);
+            StartCoroutine("Drop");
         }
+    }
+    IEnumerator Drop()
+    {
+        yield return new WaitForSeconds(.35f);
+        model.rb.AddForce(transform.up * -0.95f, ForceMode.Impulse);
+        
     }
     void ControlDrag()
     {
@@ -59,6 +66,7 @@ public class PlayerController : MonoBehaviour
             //model.rb.angularDrag = model.airDrag;
         }
     }
+
     void Jump()
     {
         if (model.isGrounded)
