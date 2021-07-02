@@ -13,10 +13,6 @@ public class PauseControl : MonoBehaviour
     [Header("References")]
     [SerializeField] GameObject goPauseMenu;
 
-    //test
-    [SerializeField] GameObject goText;
-    bool activated = false;
-
     private void Start()
     {
         goPauseMenu.SetActive(false);
@@ -27,7 +23,6 @@ public class PauseControl : MonoBehaviour
         {
             gameIsPaused = !gameIsPaused;
             PauseGame();
-            TestOneshot();
         }
     }
     void PauseGame()
@@ -67,14 +62,5 @@ public class PauseControl : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    void TestOneshot()
-    {
-        if (!activated)
-        {
-            goText.SetActive(false);
-            activated = true;
-        }
-
     }
 }

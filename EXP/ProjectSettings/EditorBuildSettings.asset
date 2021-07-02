@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Victoria.unity
     guid: 67d5a97b59683d6459507b845acb4035
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: a8062f1336b91a54cb5657bfeb416e06
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
