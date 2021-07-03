@@ -8,10 +8,13 @@ TagManager:
   - Ground
   - PlayerCollider
   - Box
-  - S1
-  - S2
-  - S3
-  - S4
+  - TutorialUI
+  - LifeUI
+  - ItemUI
+  - WeaponUI
+  - PlayerWeapon
+  - OtherTutorialUI
+  - TutorialGO
   layers:
   - Default
   - TransparentFX
