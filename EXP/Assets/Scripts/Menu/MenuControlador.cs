@@ -9,10 +9,13 @@ public class MenuControlador : MonoBehaviour
 
     private void Awake()
     {
-        //modelo.compAudioSource = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+        if (0 == SceneManager.GetActiveScene().buildIndex)
+        {
+            modelo.credits.SetActive(false);
+        }
     }
     public void ChangeScene(int index)
     {
@@ -21,15 +24,12 @@ public class MenuControlador : MonoBehaviour
     public void Credits()
     {
         modelo.main.SetActive(false);
-        modelo.credits.SetActive(true);
-        //compAudioSource.PlayOneShot(acceptSFX);
-       
+        modelo.credits.SetActive(true);      
     }
     public void Back()
     {
         modelo.main.SetActive(true);
         modelo.credits.SetActive(false);
-        
     }
     public void QuitGame()
     {

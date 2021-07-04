@@ -13,8 +13,7 @@ TagManager:
   - ItemUI
   - WeaponUI
   - PlayerWeapon
-  - OtherTutorialUI
-  - TutorialGO
+  - ObjectiveUI
   layers:
   - Default
   - TransparentFX

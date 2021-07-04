@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Movement();
-        model.isGrounded = Physics.CheckSphere(model.goGroundCheck.position, model.groundDistance, model.groundMask);
     }
 
     void Inputs()
@@ -41,11 +40,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (!model.isGrounded)
         {
-            //model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier * model.airMultiplier, ForceMode.Acceleration);
             model.rb.AddForce(model.moveDirection.normalized * model.walkSpeed * model.movementMultiplier * model.airMultiplier, ForceMode.Acceleration);
-
-            //model.rb.velocity = new Vector3(model.rb.velocity.x, 0, model.rb.velocity.z);
-            StartCoroutine("Drop");
+            StartCoroutine(Drop());
         }
     }
     IEnumerator Drop()
@@ -63,7 +59,6 @@ public class PlayerController : MonoBehaviour
         else
         {
             model.rb.drag = model.airDrag;
-            //model.rb.angularDrag = model.airDrag;
         }
     }
 
@@ -83,7 +78,6 @@ public class PlayerController : MonoBehaviour
             if (model.hasFallen)
             {
                 model.playerSfx.PlayFall();
-                //Debug.Log("fall");
                 model.hasFallen = false;
             }
         }

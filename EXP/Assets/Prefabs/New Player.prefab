@@ -459,7 +459,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3066123583065661923}
   - component: {fileID: 3066123583065661924}
-  - component: {fileID: 3066123583065661925}
   - component: {fileID: 3066123583065661922}
   - component: {fileID: 3066123583065661927}
   - component: {fileID: 3066123583065661912}
@@ -508,28 +507,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3066123583065661925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3066123583065661920}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e610764465de894a8165c225128fd46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orientation: {fileID: 3066123583134227786}
-  walkSpeed: 8
-  airMultiplier: 0.2
-  jumpForce: 14
-  jumpKey: 32
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 64
-  goGroundCheck: {fileID: 3066123582891654597}
-  groundDistance: 0.1
 --- !u!114 &3066123583065661922
 MonoBehaviour:
   m_ObjectHideFlags: 0

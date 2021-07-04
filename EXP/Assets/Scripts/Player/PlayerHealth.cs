@@ -60,7 +60,6 @@ public class PlayerHealth : MonoBehaviour
     {
         if (hp<=0)
         {
-            //KILL SELF 
             SceneManager.LoadScene(2);
         }
     }
