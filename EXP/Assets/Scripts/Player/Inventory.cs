@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
         {
             if (health.hp < health.hpMax) 
             {
-                health.Heal(1);
+                health.Heal(3);
                 num -= 1;
                 UpdateNum();
             }

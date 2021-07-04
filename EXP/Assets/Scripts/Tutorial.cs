@@ -52,7 +52,7 @@ public class Tutorial : MonoBehaviour
                 
                 break;
             case 2:
-                textTutorial.text = "Use the [RMB] to attack";
+                textTutorial.text = "Use the [LMB] to attack";
                 goLife.SetActive(true);
                 break;
             case 3:

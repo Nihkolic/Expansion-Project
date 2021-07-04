@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-public class EnemyNewAI : MonoBehaviour
+public class EnemyPatrol : MonoBehaviour
 {
 	[HideInInspector]
 	public NavMeshAgent agent;
