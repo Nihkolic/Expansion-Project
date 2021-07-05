@@ -6427,13 +6427,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ee0855c1c847f43998529ee65d6bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goTutorialParent: {fileID: 0}
   goTutorial: {fileID: 0}
   textTutorial: {fileID: 0}
   goItem: {fileID: 0}
   goWeapon: {fileID: 0}
   goLife: {fileID: 0}
-  goOtherTutorial: {fileID: 0}
-  tutorialGO: {fileID: 0}
+  goObjective: {fileID: 0}
 --- !u!1 &3638134014572324630
 GameObject:
   m_ObjectHideFlags: 0
@@ -14414,7 +14414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8975390575884131583, guid: 9a91451fd7f06bf4a8ade5c42d95b4c6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8975390575884131583, guid: 9a91451fd7f06bf4a8ade5c42d95b4c6, type: 3}
       propertyPath: m_LocalRotation.w
