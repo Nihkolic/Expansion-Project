@@ -55,27 +55,7 @@ public class EnemyPatrol : MonoBehaviour
 
 	private void Update()
 	{
-		//Check for sight and attack range
-		playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-		playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
-		switch (state)
-		{
-			case State.patrolling:
-				Patroling();
-				break;
-
-			case State.chasing:
-				ChasePlayer();
-				break;
-
-			case State.attack:
-				AttackPlayer();
-				break;
-		}
-		if (!playerInSightRange && !playerInAttackRange) state = State.patrolling; //Patroling();
-		if (playerInSightRange && !playerInAttackRange) state = State.chasing; //ChasePlayer();
-		if (playerInAttackRange && playerInSightRange) state = State.attack; //AttackPlayer();
+		Patroling();
 	}
 	private void LateUpdate()
 	{
@@ -111,7 +91,7 @@ public class EnemyPatrol : MonoBehaviour
 		if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
 			walkPointSet = true;
 	}
-
+	/*
 	private void ChasePlayer()
 	{
 		agent.SetDestination(player.position);
@@ -139,7 +119,7 @@ public class EnemyPatrol : MonoBehaviour
 	public void ResetAttack()
 	{
 		anim.Play("EnemyIdle");
-	}
+	}*/
 	private void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.yellow;
