@@ -21,9 +21,11 @@ public class EnemyNewAI : MonoBehaviour
 	Vector3 walkPoint;
 	bool walkPointSet;
 	public float sightRange;
+	public float sightRangeMax;
 
 	[Header("Attack")]
 	public float attackMovSpeed = 2f;
+	public float attackMovSpeedMax = 15f;
 	public float timeBetweenAttack;
 	float _timeBetweenAttack;
 	//bool alreadyAttacked;
@@ -56,7 +58,7 @@ public class EnemyNewAI : MonoBehaviour
 	private void Update()
 	{
 		//Check for sight and attack range
-		playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+		playerInSightRange = Physics.CheckSphere(transform.position, Random.Range(sightRange,sightRangeMax), whatIsPlayer);
 		playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
 		switch (state)
@@ -126,7 +128,7 @@ public class EnemyNewAI : MonoBehaviour
 		if (timeBetweenAttack<0)
 		{
 			Attack();
-			agent.speed = attackMovSpeed;
+			agent.speed = Random.Range(attackMovSpeed,attackMovSpeedMax);
 			timeBetweenAttack = _timeBetweenAttack;
 			//Invoke(nameof(ResetAttack), timeBetweenAttacks);
 		}

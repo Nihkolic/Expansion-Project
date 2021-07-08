@@ -475,7 +475,9 @@ MonoBehaviour:
   chasingMovSpeed: 15
   walkPointRange: 15
   sightRange: 20
+  sightRangeMax: 30
   attackMovSpeed: 5
+  attackMovSpeedMax: 15
   timeBetweenAttack: 0.1
   attackRange: 2
   enemySfx: {fileID: 3523500081713565254}

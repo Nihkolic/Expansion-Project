@@ -12,6 +12,8 @@ public class PauseControl : MonoBehaviour
 
     [Header("References")]
     [SerializeField] GameObject goPauseMenu;
+    public AudioSource audioSource;
+    public AudioClip clicClip;
 
     private void Start()
     {
@@ -46,6 +48,7 @@ public class PauseControl : MonoBehaviour
         goPauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        PlayClic();
     }
     public void ToMainMenu()
     {
@@ -54,13 +57,20 @@ public class PauseControl : MonoBehaviour
         SceneManager.LoadScene(0); 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        PlayClic();
     }
     public void QuitGame()
     {
         Application.Quit();
+        PlayClic();
     }
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PlayClic();
+    }
+    public void PlayClic()
+    {
+        audioSource.PlayOneShot(clicClip, 0.8f);
     }
 }
