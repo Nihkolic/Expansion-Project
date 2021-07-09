@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
     public bool isEnemyDead;
     public Collider[] enemyCol;
     public EnemySfx enemySfx;
+    public GameObject goEnemyDeath;
+    public Transform enemyDeath;
     private void Start()
     {
         enemyAI = GetComponent<EnemyNewAI>();
@@ -23,18 +25,26 @@ public class EnemyHealth : MonoBehaviour
 
         if(enemyHealth <= 0) 
         { 
-            EnemyDead(); 
+            EnemyDead();
+            
         }
     }
     void EnemyDead()
     {
-        isEnemyDead = true;
+        if (isEnemyDead == false)
+        {
+            Instantiate(goEnemyDeath, enemyDeath.position, Quaternion.identity);
+            isEnemyDead = true;
+        }
+        Destroy(gameObject);
         //enemyAI.EnemyDeathAnim();
         //enemyAI.agent.speed = 0f;
+        /*
         foreach (var col in enemyCol)
         {
             col.enabled = false;
-        }
-        Destroy(gameObject,0.5f);
+        }*/
+
+        //Destroy(gameObject,0.5f);
     }
 }

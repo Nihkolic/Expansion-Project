@@ -73,6 +73,6 @@ public class TutorialVar : MonoBehaviour
     }
     public void PlayTutorial()
     {
-        audioSource.PlayOneShot(tutorialClip, 0.5f);
+        audioSource.PlayOneShot(tutorialClip, 0.25f);
     }
 }
